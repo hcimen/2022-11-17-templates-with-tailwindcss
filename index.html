@@ -4,55 +4,62 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
+  <title> ~tailwindcss~</title>
 </head>
 <body>
-  
-<div class="bg-white items-center border-solid border-4 font-sans">
+
+<div class="border-solid border-4 font-sans m-4">
   <a href="index.html">
-  <img class="object-fill h-36 w-96" src="logo.png" alt:logo> </img> </a>
-</div>
+  <img class="object-fill h-36" src="logo.png" alt:logo> </img> </a>
+</div> <br>
 
-<div class="bg-white items-center border-solid border-4 font-sans h-16">
+<div class="border-solid border-4 h-64 m-4">
   
-  <label for="username" id="user">Username or email address: </label>
-  <input class="border-solid" type="text" id="username" name="username"> 
+  <label class="m-4" for="username" id="user">Username or email address: </label>
+  <input class="border-solid border-2 m-4 w-64" type="text" id="username" name="username"> <br>
  
-  <label for="pass"> Password: </label> 
-  <input class="border-solid" type="password" id="pass" name="pass">
+  <label class="m-4" for="pass"> Password: </label> 
+  <input class="border-solid border-2 m-4 w-64" type="password" id="pass" name="pass">
 
-  <button class="w-24 bg-cyan-500" type="submit"> Sign In </button> 
-  <a href="register.html"> Sign Up </a>  
+  <button class="w-24 bg-cyan-500 m-4" type="submit"> Sign In </button> 
+  <a class="m-8" href="register.html"> Sign Up </a>  
 
-</div>
-
-<div class="bg-white items-center border-solid border-4 font-sans size-1/2">
-   <iframe src="iframe1.html" name="iframe1"> </iframe>
-
-<br>
-
-   <iframe class="h-screen w-screen" src="" name="iframe2" id="iframe2"> </iframe>
-
-</div>
+</div><br>
 
 
-<div class="bg-white items-center border-solid border-4 font-sans size-1/2">
+<div class="bg-white items-center border-solid border-4 font-sans m-4 p-4">
  
-<h1> Main Page </h1>
+<h1> <b> Get started with Tailwind CSS </b> </h1>
 
-<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque nec velit sollicitudin, sodales dui sit amet, egestas massa. Phasellus id felis id mi mollis rutrum sit amet vel lorem. Nulla in tincidunt dui. Pellentesque elit elit, viverra in iaculis vitae, sodales ac ligula. Nam feugiat gravida ullamcorper. Nunc rhoncus dolor in lectus varius cursus. Integer nisi tortor, interdum ut vehicula ut, maximus et diam.
+<p> Tailwind CSS works by scanning all of your HTML files, JavaScript components, and any other templates for class names, generating the corresponding styles and then writing them to a static CSS file.</p>
 
-Aenean eget elit vel neque convallis ultrices. Nunc magna lorem, condimentum sed tortor ac, aliquet vestibulum urna. Nulla laoreet leo eget nulla vehicula, ut blandit nunc imperdiet. Phasellus ultricies libero et turpis commodo, quis vehicula mi pharetra. Duis non dolor nisl. Suspendisse non nisl eget felis pellentesque fermentum sit amet id ante. Sed sollicitudin lorem euismod consectetur dapibus. Mauris luctus metus justo, viverra dignissim velit finibus at. Maecenas consectetur odio faucibus, luctus nisi eget, volutpat mi. Aenean id augue et mi congue luctus. Maecenas a laoreet felis. Duis vel tellus nisl. Quisque placerat id purus ut interdum. Integer venenatis purus nisi, sit amet laoreet risus sagittis in. </p>
- </div>
+<p> It's fast, flexible, and reliable — with zero-runtime. </p>
 
-<div>
-<iframe class="object-none h-screen w-screen" src="documentation.html" name="iframe_a" title="Iframe Example"></iframe>
+
 
  </div>
 
-<div>
+<div id="main" class="grid-cols-2 m-4 border-solid border-4"> 
 
-<iframe src="" name="iframe2"> </iframe>
+<div class="w-3/10 m-4">
 
-</div>
+   <iframe src="iframe1.html" name="iframe1" scrolling="yes"> </iframe>
+  </div>
+   
+<div class="w-7/10 h-96 m-4">
+   
+   <iframe class="w-800px h-96" src="aboutblank.html" name="iframe2" id="iframe2">  </iframe>
+  
+   </div>
+</div><br>
+
+
+
+<div class="border-solid border-4 h-48 m-4">
+<iframe class="h-300px w-450px m-4" name="iframe_a" src="https://www.youtube.com/embed/TmWIrBPE6Bc"></iframe>
+
+ </div>
+
+
 </body>
 </html>
