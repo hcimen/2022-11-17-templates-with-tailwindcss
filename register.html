@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title> ~tailwindcss~</title>
+</head>
+<body>
+
+<div class="border-solid border-4 font-sans m-4">
+  <a href="index.html">
+  <img class="object-fill h-36" src="logo.png" alt:logo> </img> </a>
+</div> <br>
+
+<div class="border-solid border-4 m-4">
+  <h1> Welcome to <b> ~tailwindcss~ </b> </h1> 
+  <h2> In order to start to use our services please fill out the form. <h2>
+</div>
+
+<h2 class="border-solid border-4 m-4"> <b> Personal Information </b> <h2>
+
+<form action="/action_page.php">
+
+<div class="border-solid border-4 font-sans m-4">
+  <label for="fname"> 1. First name:</label>
+  <input type="text" id="name" name="name" required><br> <br>
+ 
+  <label class=day2 for="lname">2. Last name:</label>
+  <input type="text" id="lname" name="lname" required><br> <br>
+
+  <label for="phone"> 3. Phone Number:</label>
+  <input type="tel" id="phone" name="phone" placeholder="123 456-6789" pattern="[0-9]{3} [0-9]{3}-[0-9]{4}" maxlength="16" title="Actual phone number" required> <br> <br>
+
+  <label for="email"> 4. Email Address:</label>
+  <input type="email" id="email" name="email" placeholder="admin@tailwindcss.org" required> <br> <br>
+
+  <label for="dob"> 5. Bhirt Date: </label>  
+  <input type="date"> <br> <br>  
+
+  <label for="photo"> 6. Profile Photo: </label>
+  <input type="file" id="image" name="image"> <br> <br>
+
+  <label for="favcolor"> 7. Favorite Color: </label>
+  <input type="color" id="favcolor" name="favcolor"> <br> <br>
+
+  <label for="brach"> 8. Where to learned about us? :</label>
+  <select id="branch" name="branch">
+  <option value="hackerrank"> HackerRank </option>
+  <option value="freecodecamp">freeCodeCamp</option>
+  <option value="geeks">GeeksforGeeks</option>
+  <option value="codeacademy">Codecademy</option>
+  <option value="codementor">Codementor</option>
+  <option value=" hackerearth"> HackerEarth</option>
+  <option value="w3schools">W3Schools</option>
+  <option value="medium">Programming Medium Platforms</option>
+  <option value=" YouTube"> YouTube </option>
+
+
+</select><br> <br>
+
+  <p> 9. What you know about coding, background information, if any. </p> 
+  <textarea name="message" rows="5" cols="40"> coding languages, C#, HTML, etc. </textarea>
+  <br><br>
+
+  <label for="pain"> 10. Your expectation from us (out of 10):</label>
+  <input type="range" id="pain" name="pain" min="0" max="10"> <br><br>
+ 
+</div>
+
+<div class="border-solid border-4 font-sans m-4">
+
+  <input type="checkbox" id="consent" name="check" value="1" title="Consent and permission is must!" required onclick="myFunction()">  
+  <label for="consent"> I have a consent. </label> <br>
+
+<p id="text" style="display:none"> 
+I consent to tailwindcss using my personal data for the purposes described in this notice and understand that I can withdraw my consent at any time.
+To continue to enhance communication within our school community and also share our weekly learning and achievements, we are going to continue using our private Facebook page/group. If you are happy to remain within the private group and have your child’s pictures appear on the page then please complete the slip below according</p>  <br><br>
+
+</div>
+
+<script>
+function myFunction() {
+  var checkBox = document.getElementById("consent");
+  var text = document.getElementById("text");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+  } else {
+     text.style.display = "none";
+  }
+}
+</script>
+ 
+
+<div class="border-solid border-4 font-sans m-4">
+  <label for="datesigned"> Date and time form signed:</label>  
+  <input type="datetime-local"> <br> <br>  
+</div>
+
+<div class="border-solid border-4 font-sans m-4">
+<input class="border-solid border-4 font-sans m-4" type="reset">  <input class="border-solid border-4 font-sans m-4" type="submit">
+</div>
+
+
+</form>
+
+</body>
+
+</html>
